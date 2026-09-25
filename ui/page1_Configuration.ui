@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QLabel" name="titlelabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>390</y>
+     <width>631</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Light</family>
+     <pointsize>40</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>DANCE MECHANICS DATA COLLECTION TOOLKIT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SCSlogo">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>561</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>images/SCS.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="SourceGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>140</y>
+     <width>651</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Light</family>
+     <pointsize>25</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+</string>
+   </property>
+   <property name="title">
+    <string>Sensors</string>
+   </property>
+   <widget class="QCheckBox" name="MoCapCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Display Light</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        spacing: 10px;
+    }
+
+    QCheckBox::indicator {
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00aa00;
+        border: 2px solid white;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Motion Capture</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="HandGaugeCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>491</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Light</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        spacing: 10px;
+    }
+
+    QCheckBox::indicator {
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00aa00;
+        border: 2px solid white;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Hand Force Gauges</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="COPCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>591</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Light</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        spacing: 10px;
+    }
+
+    QCheckBox::indicator {
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00aa00;
+        border: 2px solid white;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Feet Center of Pressure (COP)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="CalcsGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>440</y>
+     <width>661</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Light</family>
+     <pointsize>25</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+</string>
+   </property>
+   <property name="title">
+    <string>Calculations</string>
+   </property>
+   <widget class="QCheckBox" name="GRFCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>611</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Light</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        color: white;
+        font-size: 33px;
+        font-weight: bold;
+        spacing: 10px;
+    }
+
+    QCheckBox::indicator {
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00aa00;
+        border: 2px solid white;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Ground Reaction Force Approximations</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="COMTrackCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>521</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Light</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox {
+        color: white;
+        font-size: 33px;
+        font-weight: bold;
+        spacing: 10px;
+    }
+
+    QCheckBox::indicator {
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    QCheckBox::indicator:checked {
+        background-color: #00aa00;
+        border: 2px solid white;
+    }</string>
+    </property>
+    <property name="text">
+     <string>Center of Mass (COM) Trajectory</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="SelectData">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>40</y>
+     <width>731</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Light</family>
+     <pointsize>30</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Select data you want to collect:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>660</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Variable Text Light</family>
+     <pointsize>25</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: green;
+color: white;
+border-radius: 8px;
+padding: 6px;</string>
+   </property>
+   <property name="text">
+    <string>START</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

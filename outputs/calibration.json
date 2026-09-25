@@ -1,0 +1,29 @@
+{
+    "reference_subject": "leader",
+    "selected_target": "follower",
+    "target_person_idx": 1,
+    "origin_px": [
+        434.69059467315674,
+        646.2947274446487
+    ],
+    "origin_norm": [
+        0.6792040541768074,
+        1.3464473488430182
+    ],
+    "pixels_per_foot": 110.53846153846155,
+    "leader_height_ft": 4.333333333333333,
+    "height_ft": 4.333333333333333,
+    "target_height_ft": 4.333333333333333,
+    "target_pixels_per_foot": 102.23076923076924,
+    "target_person_height_px": 443.0,
+    "target_shoulder_width_px_ref": 206.19800082173987,
+    "target_hip_width_px_ref": 141.58234101062726,
+    "target_torso_width_px_ref": 173.89017091618356,
+    "target_torso_width_ft_ref": 1.7009572775849406,
+    "target_left_shin_px_ref": 208.86157987881484,
+    "target_right_shin_px_ref": 204.58777108535006,
+    "target_avg_shin_px_ref": 206.72467548208243,
+    "frame_width": 640,
+    "frame_height": 480,
+    "reference_image": "C:\\SeniorDesignGUI\\outputs\\reference_frame.jpg"
+}
