@@ -1,5 +1,5 @@
 @echo off
-cd /d C:\SeniorDesignGUI
+cd /d C:\senior-design
 call venv\Scripts\activate
 python main.py
 pause
